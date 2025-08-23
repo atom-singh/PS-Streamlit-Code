@@ -43,7 +43,10 @@ if uploaded_file:
         return response.data[0].embedding
 
     # Setup ChromaDB client
-    chroma_client = chromadb.Client(Settings(persist_directory='./chrome_store'))
+    chroma_client = chromadb.Client(Settings(
+	persist_directory='./chrome_store',
+	database_impl="duckdb+parquet"
+	))
     collection = chroma_client.get_or_create_collection(name="my_kb")
 
     # Add chunks to ChromaDB
