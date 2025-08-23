@@ -3,3 +3,4 @@ openai
 Pillow
 chromadb
 pymupdf
+pinecone
