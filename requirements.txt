@@ -4,6 +4,5 @@ Pillow
 chromadb
 pymupdf
 pinecone
-json
 os
 dotenv
