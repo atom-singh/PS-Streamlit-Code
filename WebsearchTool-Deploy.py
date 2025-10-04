@@ -8,7 +8,7 @@ from tavily import TavilyClient
 # ----------------------------
 # Initialize clients
 # ----------------------------
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])  # Store your key in .streamlit/secrets.toml
+openai_client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])  # Store your key in .streamlit/secrets.toml
 #openai_client = OpenAI(api_key="enter your key")  # Replace with your OpenAI API key
 tavily_client = TavilyClient(st.secrets["TAVILY_API_KEY"])    # Store your key in .streamlit/secrets.toml
 #tavily_client = TavilyClient("enter your key")    # Replace with your Tavily API key
