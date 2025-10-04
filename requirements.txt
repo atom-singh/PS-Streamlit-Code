@@ -5,4 +5,4 @@ chromadb
 pymupdf
 pinecone
 dotenv
-tavily
+tavily-python
